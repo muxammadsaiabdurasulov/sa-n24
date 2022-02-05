@@ -1,0 +1,529 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: 2px dotted #7296ec;
+    outline-offset: 2px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4a4b4c;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1300px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+.site-header {
+
+}
+.site-header-top {
+    background-color: #f6f6f6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+}
+.site-logo {
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    padding: 8px 6px;
+    margin-right: 35px;
+}
+
+.site-logo:hover{
+    opacity: 0.8;
+}
+
+
+.site-logo:active{
+    opacity: 0.6;
+}
+
+.currency {
+    margin-right: auto;
+}
+.currency-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.currency-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.currency-icon {
+    color: #2959ce;
+}
+
+.global-search {
+    margin-right: 25px;
+}
+.global-search-input {
+    background-color: #fff;
+    border-radius: 60px;
+    border: none;
+    padding: 15px 20px 15px 41px;
+    font-size: 14px;
+}
+
+.language-toggle {
+    display: flex;
+    background-color: #dce6ff;
+    border-radius: 39px;
+    padding: 3px;
+    margin-right: 25px; 
+    font-size: 13px;
+}
+
+.language-toggle-link {
+    height: 30px;
+    width: 30px;
+    color: #a6a6a6;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.language-tggle-active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+.main-button {
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 13px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.main-button:hover{
+    opacity: 0.8;
+}
+
+.main-button:active{
+    opacity: 0.6;
+}
+
+.button-primary {
+    background-color: #7296ec;
+}
+
+.sitenav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 40px;
+}
+
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 34.4px;
+}
+
+.sitenav-item{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sitenav-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7f7f7f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sitenav-link:hover{
+    opacity: 0.8;
+    color: #2959ce;
+}
+
+.sitenav-link:active{
+    opacity: 0.6;
+}
+
+ /* BANNER */
+/* .site-banner {
+
+}  */
+/* 
+.site-banner-link {
+    display: flex;
+}
+
+.site-banner-img{
+    width: 100%;
+} */
+
+
+/* НАПИШИТЕ НАМ */
+.rewiew {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.rewiew-content {
+    width: 696px;
+    margin-right: 10px;
+}
+
+.rewiew-heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    color: #000;
+}
+
+.main-form {
+    margin-bottom: 20px;
+}
+
+.name-input {
+    width: 343px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #666;
+}
+
+.number-input {
+    width: 343px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    margin-bottom: 10px;
+}
+
+.mail-input {
+    width: 696px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.text-input{
+    width: 696px;
+    padding: 18px 0px 145px 20px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #666;
+}
+
+.main-form textarea {
+    resize: none;
+    width: 696px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 18px 0px 143px 20px;
+}
+
+.blue-button {
+    background-color: #7297EF;
+    margin-left: 577px;
+}
+
+.rewiew-info {
+    width: 494px;
+    background-color: #f6f6f6;
+    margin-top: 70px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.rewiew--info-list {
+    padding-left: 25px;
+    padding-right: 10px;
+    list-style: none;
+}
+
+.rewiew--info-list:not(:last-child) {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.rewiew-info-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.7px;
+    color: #000;
+    
+}
+.rewiew-info-heading-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s;
+}
+
+.rewiew-info-heading-link:hover {
+    color: #2959ce;
+    opacity: 0.8;
+}
+
+.rewiew-info-heading-link:active {
+    color: #2959ce;
+    opacity: 0.6;
+}
+
+.rewiew-info-title {
+    font-size: 16px;
+    line-height: 18.96px;
+    color: #000;
+}
+
+
+
+
+/* FOOTER */
+.site-footer {
+    display: flex;
+    background-color: #7297EF;
+}
+
+.footer-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px 221px;
+    color: #fff;
+}
+
+.footer-info-title {
+    width: 229px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.footer-logo-link {
+    border: none;
+}
+
+.footer-logo-img {
+    display: flex;
+    margin-bottom: 15px;
+}    
+
+.footer-logo-img:hover {
+    opacity: 0.8;
+}
+    
+.footer-logo-img:active {
+    opacity: 0.6;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    margin-left: 432px;
+    margin-top: -105px;
+    margin-bottom: 30px;
+}
+
+.column-1 {
+    width: 167px;
+    margin-right: 100px;
+    margin-bottom: -35px;
+}
+
+.footer-info-item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-info-item-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.footer-info-item-link:hover {
+    opacity: 0.8;
+    color: #4a4b4c;
+}
+
+.footer-info-item-link:active {
+    opacity: 0.6;
+}
+
+.column-2 {
+    width: 224px;
+    flex-direction: column;
+}
+
+.footer-decline {
+    width: 1000px;
+}
+
+.footer-info-heading {
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.footer-latest-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-network-links {
+    text-decoration: none;
+}
+
+.social-network-links:not(:last-child) {
+    margin-right: 25px;
+}
+
+
+.socoal-network-logo {
+    width: 25px;
+    height: 25px;
+}
+
+/* НАПИШИТЕ НАМ */
+.rewiew {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.rewiew-content {
+    width: 696px;
+    margin-right: 10px;
+}
+
+.rewiew-heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    color: #000;
+}
+
+.main-form {
+    margin-bottom: 20px;
+}
+
+.name-input {
+    width: 343px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #666;
+
+}
+
+.number-input {
+    width: 343px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    margin-bottom: 10px;
+}
+
+.mail-input {
+    width: 696px;
+    padding: 18px 0px 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    margin-bottom: 10px;
+}
+
+.main-form textarea {
+    resize: none;
+    width: 696px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 18px 0px 143px 20px;
+}
+
+.blue-button {
+    background-color: #7297EF;
+    margin-left: 577px;
+}
+
+.rewiew-info {
+    width: 494px;
+    background-color: #f6f6f6;
+    margin-top: 70px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.rewiew--info-list {
+    padding-left: 25px;
+    padding-right: 10px;
+    list-style: none;
+}
+
+.rewiew--info-list:not(:last-child) {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.rewiew-info-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.7px;
+    color: #000;
+    
+}
+.rewiew-info-heading-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s;
+}
+
+.rewiew-info-heading-link:hover {
+    color: #2959ce;
+    opacity: 0.8;
+}
+
+.rewiew-info-heading-link:active {
+    color: #2959ce;
+    opacity: 0.6;
+}
+
+.rewiew-info-title {
+    font-size: 16px;
+    line-height: 18.96px;
+    color: #000;
+}
